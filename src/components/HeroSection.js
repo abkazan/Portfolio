@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './hero.module.css';
 import AnimePic from '../images/animecity.webp';
-import ShootingStar from "../ShootingStar";
+import ShootingStar from "./ShootingStar";
 
 const HeroSection = () => {
     return (

@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import menuIcon from '../images/menu-icon.png';
 import styles from './nav.module.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

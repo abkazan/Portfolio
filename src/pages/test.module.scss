@@ -1,0 +1,16 @@
+.page {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    >div {
+        background-color: aquamarine;
+        width: 50vw;
+        height: 50vw;
+        text-align: center;
+        >h1 {
+            font-size: 2em;
+            color: gold;
+        }
+    }
+
+}
