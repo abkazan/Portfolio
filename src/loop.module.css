@@ -1,0 +1,53 @@
+/* LoopingList.module.css */
+.looping-list-container {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    height: 40px; /* Adjust the height as needed */
+  }
+  
+  .looping-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+     /* Adjust duration as needed (twice the interval) */
+  }
+  .looping-list.left {
+    animation: moveLeft 10s linear infinite;
+    }
+  
+    .looping-list.right {
+        animation: moveRight 10s linear infinite;
+    }
+
+  .looping-list li {
+    padding: 10px;
+    background-color: #eee;
+    margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+    width: fit-content;
+    text-align: center;
+    
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+
+      transform: translateX(-100vw);
+    }
+  }
+  @keyframes moveRight {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+  }
+  

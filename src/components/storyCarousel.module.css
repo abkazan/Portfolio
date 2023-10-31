@@ -1,0 +1,100 @@
+.cardCarousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 40vw;
+    margin: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+    animation: fadeIn .5s ease forwards;
+    border-radius: 20px;
+    height: 60vh;
+  }
+
+  @media (max-width: 1000px) {
+    .card {
+      width: 75vw;
+    }
+  }
+  
+  .card p {
+    color: black;
+    
+  }
+  .card img {
+    width: 25vw;
+    height: auto;
+  }
+  
+  .pagination {
+    display: flex;
+    margin-top: 2vh;
+    gap: 10vw;
+    
+  }
+  
+  .prevButton,
+  .nextButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1em;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #0056b3;
+  }
+
+.card.next {
+  animation: fadeOutNext 1s ease forwards;
+  /* border: 5px solid blue; */
+}
+.card.prev {
+  animation: fadeOutPrev 1s ease forwards;
+  /* border: 5px solid green; */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutNext {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes fadeOutPrev {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+  

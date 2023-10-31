@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.container {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 15vw;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg")
+        no-repeat 50% / cover;
+      
+    }
+    &:nth-of-type(2) {
+      background: url("https://media.sweetwater.com/m/products/image/a33a7cfc57Xam2hHAmFW0R3kpzAnF3YG3iMX9jpi.jpg?quality=82&width=750&ha=a33a7cfc57eef7be")
+        no-repeat 90% / cover;
+      
+    }
+    &:nth-of-type(3) {
+      background: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_vs_Data_Analytics.jpg")
+        no-repeat 50% / cover;
+      
+    }
+    &:nth-of-type(4) {
+      background: url("https://uploads-ssl.webflow.com/608353cb0067e32edaa3e4c9/619518f59591bd962396074d_Content%20Images%20-%20Which%20AI%20Is%20Learn%20by%20Its%20Own%20(2).jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      /* text-shadow: 3px 3px 10px #1e0e3e, -3px 3px 10px #1e0e3e,
+        -3px -3px 10px #1e0e3e, 3px -3px 10px #1e0e3e,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+      
+      color: #fff;
+      display: flex;
+      align-items: center;
+
+      padding: 15px;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform .5s ease;
+      visibility: hidden;
+    }
+
+    &:hover {
+      flex: 0 0 25vw;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+      /* opacity: .5; */
+    }
+    &:hover .content {
+      backdrop-filter: blur(5px);
+
+      transform: translatey(0%);
+      visibility: visible;
+    }
+    
+    &:hover .content .heading {
+      animation: fadeIn 0.5s ease-in-out forwards;
+      animation-delay: 0.5s;
+      font-size: 1.5em;
+      opacity: 0;
+    }
+
+    &:hover .content span {
+      font-size: 1em;
+      width: 24vw;
+      text-align: center;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .heading {
+    
+    font-size: 1.2em !important;
+      
+    
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    > div {
+      &:hover .content span {
+        font-size: .9em;
+        width: 45vw;
+        line-height: 2em;
+      }
+    }
+  }
+  .container:hover > div {
+    flex: 0 0 10vw; /* Style for unhovered divs when any card in .container is hovered */
+  }
+  .container > div:hover {
+    flex: 0 0 50vw; /* Style for the hovered card */
+  }
+  .container > div {
+    flex: 0 0 20vw; /* Default style for all divs */
+  }
+  /* .container > div {
+    transition: flex 1s;
+  } */
+}

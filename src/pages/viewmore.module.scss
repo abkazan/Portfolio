@@ -1,0 +1,54 @@
+.page {
+    padding-top: 10vh;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000114;
+    .loading {
+        display: grid;
+        place-items: center;
+        padding-top: 20vh;
+        text-align: center;
+        >h1 {
+            
+            margin-bottom: 5vh;
+            font-size: 3em;
+        }
+    }
+    
+}
+.descAndImg {
+    >img {
+        width: 30vw;
+        height: auto;
+    }
+    
+}
+.container {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    >div {
+        /* border: 1px solid red; */
+        width: 50vw;
+        height: 50vh;
+    }
+}
+.techAndConcepts {
+    display: flex;
+    .list {
+        >h2 {
+            margin-bottom: 1em;
+        }
+        width: 25vw;
+        
+        >ul {
+            list-style: none;
+            >li {
+                margin: 2vh 0;
+            }
+        }
+        
+    }
+}

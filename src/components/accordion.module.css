@@ -1,0 +1,52 @@
+/* Accordion.module.css */
+.accordion {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 50vw;
+}
+
+.section {
+  border-top: 1px solid #ccc;
+}
+
+.sectionHeader {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+
+.sectionContent {
+  padding: 10px;
+  background-color: #fff;
+  height: 50px;
+  transition: height .5s;
+  
+}
+.sectionContent p {
+  color: black;
+}
+
+.iconOpen {
+  animation: open .5s linear forwards;
+}
+@keyframes open {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.iconClosed {
+  transform: rotate(0deg);
+}
+
+.activeSection {
+  animation: openSection 1s ease forwards;
+}

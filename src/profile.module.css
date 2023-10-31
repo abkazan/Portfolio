@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw;
+   /*  border: 2px solid red; */
+   background-color: #000114;
+   
+}
+
+.pic {
+    height: 75vh;
+    margin-right: 5vw;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+}
+
+.heading {
+    color: white;
+    align-self: start;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+    margin-bottom: 10vh;
+}
+.container p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+
+.container p {
+    /* text-shadow: 0px 0px 10px #00f, -0px 0px 20px #00f, 0px -0px 30px #00f; */
+    /* animation: flicker 3s infinite; */
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+    }
+    50% {
+        text-shadow: 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f;
+    }
+}
+@keyframes flicker {
+   0%, 100% {
+    text-shadow: 0px 0px 10px #00f, -0px 0px 20px #00f, 0px -0px 30px #00f, -0px -0px 40px #00f;
+   }
+   25% {
+    text-shadow: 5px 5px 10px #00f, -5px 5px 20px #00f, 5px -5px 30px #00f, -5px -5px 40px #00f;
+   }
+   50% {
+    text-shadow: 10px 10px 10px #00f, -10px 10px 20px #00f, 10px -10px 30px #00f, -10px -10px 40px #00f;
+   }
+   75% {
+    text-shadow: 5px 5px 10px #00f, -5px 5px 20px #00f, 5px -5px 30px #00f, -5px -5px 40px #00f;
+   }
+   
+}
+.socials {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    gap: 8vw;
+    margin-bottom: 10vh;
+}
+.socials img {
+    width: 100px;
+    height: 100px;
+    
+}
+.loader {
+    display: grid;
+    place-items: center;
+    padding: 50vh 0;
+    background-color: #000114;
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .heading {
+        font-size: 1.5em;
+        margin-bottom: 5vh;
+    }
+    .container p {
+        font-size: 1em;
+        margin-bottom: 5vh;
+    }
+    .socials {
+        margin-bottom: 5vh;
+    }
+    .socials img {
+        width: 75px;
+        height: 75px;
+    }
+    .pic {
+        width: 40vw;
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    .socials {
+        gap: 10vw;
+    }
+    .socials img {
+        width: 75px;
+        height: 75px;
+        
+    }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heading {
+        font-size: 1.5em;
+    }
+    .imgAndTxt {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5vh;
+        > p {
+            font-size: 1em;
+        }
+        .pic {
+            width: 35vw;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5em;
+    }
+    .imgAndTxt {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 5vh;
+        > p {
+            font-size: .75em;
+        }
+        .pic {
+            width: 40vw;
+            height: auto;
+        }
+    }
+
+}
+
+

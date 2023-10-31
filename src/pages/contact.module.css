@@ -1,0 +1,55 @@
+/* contact.module.css */
+.page {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #000114;
+    color: white;
+  }
+  .page h2 {
+    padding: 5vh 0;
+    font-size: 2.2em;
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: center;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .inputField,
+  .message {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5vh;
+    background-color: rgb(127, 255, 251);
+    width: 50vw;
+    
+  }
+  
+.sendBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .sendBtn:hover {
+    opacity: .7;
+  }
+  /* .sendBtn:active {
+    filter: saturate(100%);
+  } */
+  
+
