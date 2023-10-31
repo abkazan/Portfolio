@@ -7,9 +7,11 @@ const StoryCarousel = ({ cards }) => {
 
   const handleNext = () => {
     setDir('right');
-    
     setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    }, 500)
+    setTimeout(() => {
+        
         setDir('none')
     }, 1000)
   };
