@@ -18,13 +18,14 @@ const StoryCarousel = ({ cards }) => {
 
   const handlePrev = () => {
     setDir('left');
-    
     setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+    }, 500)
+    setTimeout(() => {
+       
         setDir('none')
     }, 1000)
   };
-
   return (
     <div className={styles.cardCarousel}>
       <div className={`${styles.card} ${dir !== 'none' ? (dir === 'right' ? styles.next : styles.prev) : ''}`}>
