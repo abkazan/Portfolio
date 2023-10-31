@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './storyCarousel.module.css';
+import styles from './storyCarousel.module.scss';
 
 const StoryCarousel = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

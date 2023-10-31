@@ -16,6 +16,13 @@
     animation: fadeIn .5s ease forwards;
     border-radius: 20px;
     height: 60vh;
+    >p {
+      color: black;
+    }
+    >img {
+      width: 30vw;
+      height: auto
+    }
   }
 
   @media (max-width: 1000px) {
@@ -24,14 +31,6 @@
     }
   }
   
-  .card p {
-    color: black;
-    
-  }
-  .card img {
-    width: 25vw;
-    height: auto;
-  }
   
   .pagination {
     display: flex;
@@ -49,8 +48,8 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    width: 10vw;
-    height: 3vw;
+    width: 1.5em;
+    height: 1.1em;
     font-size: 1em;
   }
   
