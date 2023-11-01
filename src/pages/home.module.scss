@@ -32,7 +32,7 @@
       display: grid;
       place-items: center;
       > img {
-        width: 175px;
+        
         height: auto;
       }
     }
@@ -65,15 +65,16 @@
     
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   /* CSS rules for mobile devices go here */
   .page {
-    border: 1px solid red;
-    .imgAndTxt {
-
-    }
     .heading {
       width: 80%;
+    }
+    .imgContainer {
+        >img {
+            width: 175px;
+        }
     }
     .txtContainer {
         >p {
@@ -93,6 +94,36 @@
     }
   }
 }
+@media (min-width: 701px) and (max-width: 1023px) {
+    /* CSS rules for tablet devices go here */
+    
+        .imgContainer {
+            >img {
+                width: 250px;
+            }
+        }
+        .txtContainer p{
+            
+                font-size: 1.5em;
+            
+        }
+    
+}
+
+@media (min-width: 1024px) {
+    /* CSS rules for desktop devices go here */
+    .page {
+        justify-content: center;
+        .imgContainer img {
+        
+            width: 300px;
+        }
+        .txtContainer p {
+            font-size: 1.75em;
+        }
+    }
+    
+  }
 
 .loader {
   display: grid;
@@ -108,5 +139,4 @@
     color: white;
   }
 }
-.loader h1 {
-}
+
