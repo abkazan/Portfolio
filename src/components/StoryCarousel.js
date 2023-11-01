@@ -4,9 +4,7 @@ import styles from './storyCarousel.module.scss';
 const StoryCarousel = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dir, setDir] = useState('none');
-  const debug = () => {
-    console.log(currentIndex, cards.length);
-  }
+  
   const handleClick = (currDir) => {
     
     setDir(currDir);
