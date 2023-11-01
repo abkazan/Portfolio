@@ -17,16 +17,16 @@
     text-align: center;
   }
   .imgAndTxt {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
-
+    padding: 30px;
     align-items: center;
     .imgContainer,
     .txtContainer {
       flex: 1;
     }
     .imgContainer {
-    margin-left: 30px;
+    
       display: grid;
       place-items: center;
       > img {
@@ -36,12 +36,17 @@
     }
     .txtContainer {
         /* border: 1px solid blue; */
-        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        
         >p {
             text-align: center;
+            flex: 1;
+            font-size: .8em;
             
         }
         .socials {
+            flex: 1;
             margin-top: 5vh;
             display: flex;
             justify-content: space-evenly;
@@ -60,11 +65,14 @@
 @media (max-width: 767px) {
   /* CSS rules for mobile devices go here */
   .page {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     .heading {
       width: 80%;
     }
     .txtContainer {
+        >p {
+        
+        }
     }
   }
 }
