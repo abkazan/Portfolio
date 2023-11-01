@@ -12,7 +12,7 @@ import Loader from '../components/Loader';
 
 const HomePage = () => {
 
-    const [imageLoaded, setImageLoaded] = useState(true);
+    const [imageLoaded, setImageLoaded] = useState(false);
     const [imgUrl, setImgUrl] = useState(""); // The URL of the image
 
     useEffect(() => {
