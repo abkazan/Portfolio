@@ -21,8 +21,10 @@
     display: flex;
     padding: 30px;
     align-items: center;
+    
     .imgContainer,
     .txtContainer {
+    margin: 10px;
       flex: 1;
     }
     .imgContainer {
@@ -30,7 +32,7 @@
       display: grid;
       place-items: center;
       > img {
-        width: 200px;
+        width: 175px;
         height: auto;
       }
     }
@@ -46,6 +48,7 @@
             
         }
         .socials {
+            
             flex: 1;
             margin-top: 5vh;
             display: flex;
@@ -66,6 +69,9 @@
   /* CSS rules for mobile devices go here */
   .page {
     border: 1px solid red;
+    .imgAndTxt {
+
+    }
     .heading {
       width: 80%;
     }
@@ -74,6 +80,7 @@
             font-size: .85em;
         }
         .socials {
+            gap: 20px;
             >a {
                 >img {
                     /* border: 1px solid red; */
