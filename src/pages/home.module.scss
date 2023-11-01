@@ -7,6 +7,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
   > h1,
   p {
     color: white;
@@ -24,45 +25,53 @@
     
     .imgContainer,
     .txtContainer {
-    margin: 10px;
+      margin: 10px;
       flex: 1;
     }
     .imgContainer {
-    
       display: grid;
       place-items: center;
       > img {
-        
+        box-shadow: 3px 3px 15px #7645d8;
         height: auto;
+        border-radius: 20px;
       }
     }
     .txtContainer {
-        /* border: 1px solid blue; */
+      /* border: 1px solid blue; */
+      display: flex;
+      flex-direction: column;
+
+      > p {
+        text-align: center;
+        flex: 1;
+        background-image: linear-gradient(45deg, #ff8a00, #ff0080);
+        -webkit-background-clip: text; /* For compatibility with some browsers */
+        background-clip: text; /* This property is now widely supported */
+        color: transparent;
+      }
+      .socials {
+        flex: 1;
+        margin-top: 5vh;
         display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         
-        >p {
-            text-align: center;
-            flex: 1;
-            
-            
-        }
-        .socials {
-            
-            flex: 1;
-            margin-top: 5vh;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            > a {
-              > img {
-                width: 100px;
-                height: 100px;
-              }
+        > a {
+          &:nth-child(2) {
+            > img {
+              border-radius: 50%;
             }
           }
+          > img {
+            border-radius: 20%;
+            box-shadow: 3px 3px 15px #7645d8;
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
     }
-    
   }
 }
 @media (max-width: 700px) {
@@ -72,58 +81,54 @@
       width: 80%;
     }
     .imgContainer {
-        >img {
-            width: 175px;
-        }
+      > img {
+        width: 175px;
+      }
     }
     .txtContainer {
-        >p {
-            font-size: .85em;
+      > p {
+        font-size: 0.85em;
+      }
+      .socials {
+        gap: 20px;
+        > a {
+          > img {
+            /* border: 1px solid red; */
+            width: 75px !important;
+            height: 75px !important;
+          }
         }
-        .socials {
-            gap: 20px;
-            >a {
-                >img {
-                    /* border: 1px solid red; */
-                    width: 75px !important;
-                    height: 75px !important;
-                }
-            }
-            
-        }
+      }
     }
   }
 }
 @media (min-width: 701px) and (max-width: 1023px) {
-    /* CSS rules for tablet devices go here */
-    
-        .imgContainer {
-            >img {
-                width: 250px;
-            }
-        }
-        .txtContainer p{
-            
-                font-size: 1.5em;
-            
-        }
-    
+  /* CSS rules for tablet devices go here */
+
+  .imgContainer {
+    > img {
+      width: 250px;
+    }
+  }
+  .txtContainer p {
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 1024px) {
-    /* CSS rules for desktop devices go here */
-    .page {
-        justify-content: center;
-        .imgContainer img {
-        
-            width: 300px;
-        }
-        .txtContainer p {
-            font-size: 1.75em;
-        }
-    }
+  /* CSS rules for desktop devices go here */
+  .page {
+    justify-content: center;
     
+    
+    .imgContainer img {
+      width: 300px;
+    }
+    .txtContainer p {
+      font-size: 1.75em;
+    }
   }
+}
 
 .loader {
   display: grid;
@@ -139,4 +144,3 @@
     color: white;
   }
 }
-
