@@ -90,6 +90,13 @@
   background-clip: text; /* This property is now widely supported */
   color: transparent;
 }
+@media (max-width: 767px) {
+    /* CSS rules for mobile devices go here */
+    .imgAndTxt {
+        border: 1px solid red;
+    }
+    
+  }
 @media (min-width: 700px) {
     .txtContainer p {
         font-size: 1.5em;
