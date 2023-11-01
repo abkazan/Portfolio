@@ -9,10 +9,10 @@ const StoryCarousel = ({ cards }) => {
     setDir('right');
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 500)
+    }, 700)
     setTimeout(() => {
-        
-        setDir('none')
+
+      setDir('none')
     }, 1000)
   };
 
@@ -20,10 +20,10 @@ const StoryCarousel = ({ cards }) => {
     setDir('left');
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-    }, 500)
+    }, 700)
     setTimeout(() => {
-       
-        setDir('none')
+
+      setDir('none')
     }, 1000)
   };
   return (

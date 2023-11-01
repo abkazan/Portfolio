@@ -2,6 +2,7 @@
     background-color: #000114;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 .pageHeading {
