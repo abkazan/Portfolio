@@ -42,7 +42,7 @@
         >p {
             text-align: center;
             flex: 1;
-            font-size: .8em;
+            
             
         }
         .socials {
@@ -65,13 +65,23 @@
 @media (max-width: 767px) {
   /* CSS rules for mobile devices go here */
   .page {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     .heading {
       width: 80%;
     }
     .txtContainer {
         >p {
-        
+            font-size: .85em;
+        }
+        .socials {
+            >a {
+                >img {
+                    /* border: 1px solid red; */
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            
         }
     }
   }
