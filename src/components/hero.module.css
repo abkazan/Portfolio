@@ -14,6 +14,7 @@
   overflow: hidden;
   width: 90vw;
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .hero {
@@ -21,17 +22,30 @@
   position: relative;
   display: grid;
   place-items: center;
+  
 }
 .hero img {
   position: absolute;
   top: 50%; /* Move the top edge to the vertical center */
   left: 50%; /* Move the left edge to the horizontal center */
   transform: translate(-50%, -50%);
-  width: 80vw;
-  border-radius: 30px;
+  width: 90vw;
+  border-radius: 150px;
   height: auto;
+  padding: 100px;
 }
-
+@media (max-width: 768px) { 
+  .hero img {
+    padding: 10px;
+    border-radius: 100px;
+    /* border: 1px solid red; */
+  }
+}
+@media (min-width: 1024px) {
+  .hero img {
+    width: 80vw;
+  }
+}
 .hero h3 {
   font-size: 1em;
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
