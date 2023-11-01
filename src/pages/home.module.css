@@ -209,17 +209,6 @@
         height: 15vw;
     }
 }
-.loader {
-    display: grid;
-    place-items: center;
-    padding: 50vh 0;
-    background-color: #000114;
-}
-.loader h1 {
-    font-size: 3.5em;
-    margin-top: 10vh;
-    text-align: center;
-    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
-}
+
 
 

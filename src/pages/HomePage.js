@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from "react";
-import styles from './home.module.css';
+import styles from './home.module.scss';
 
 
 //import ShootingStar from "./ShootingStar";
@@ -12,22 +12,22 @@ import Loader from '../components/Loader';
 
 const HomePage = () => {
 
-const [imageLoaded, setImageLoaded] = useState(false);
-  const [imgUrl, setImgUrl] = useState(""); // The URL of the image
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const [imgUrl, setImgUrl] = useState(""); // The URL of the image
 
-  useEffect(() => {
-    // Pre-load the image in the background
-    const image = new Image();
-    image.src = "https://firebasestorage.googleapis.com/v0/b/database-bb490.appspot.com/o/Profile_Pic.webp?alt=media&token=0b7141dd-c3cf-4a7b-8476-9fb7ecde11b0"; // Replace with the actual image URL
+    useEffect(() => {
+        // Pre-load the image in the background
+        const image = new Image();
+        image.src = "https://firebasestorage.googleapis.com/v0/b/database-bb490.appspot.com/o/Profile_Pic.webp?alt=media&token=0b7141dd-c3cf-4a7b-8476-9fb7ecde11b0"; // Replace with the actual image URL
 
-    image.onload = () => {
-      setImgUrl(image.src); // Once the image is loaded, set the URL
-      setTimeout(() => {
-        setImageLoaded(true);
-      }, 2000);
-       // Mark the image as loaded
-    };
-  }, []);
+        image.onload = () => {
+            setImgUrl(image.src); // Once the image is loaded, set the URL
+            setTimeout(() => {
+                setImageLoaded(true);
+            }, 2000);
+            // Mark the image as loaded
+        };
+    }, []);
 
     return (
         <>
