@@ -82,8 +82,12 @@
 
 }
 @media (max-width: 800px) {
+    .page {
+        justify-content: space-evenly ;
+    }
     .container {
         flex-direction: column;
+        gap: 5vh;
     }
     .descAndImg img {
         width: 65vw !important;
