@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Bucksin6ixffsn",
+    "desc": "A website for the Bucksin6ixffsn podcast, written in React with backend admin authentication using an Express server",
+    "img": "https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg",
+    "tech used": [
+      "ReactJs",
+      "ExpressJs",
+      "NodeJs",
+      "Firebase",
+      "JSON Web Tokens",
+      "Git",
+      "VSCode"
+    ],
+    "concepts learned": [
+      "Fullstack web development",
+      "Cybersecurity",
+      "Authentication",
+      "OOP",
+      "Database managment",
+      "APIs"
+    ]
+  },
+  {
+    "title": "Digital Sampler",
+    "desc": "A music production application that allows users to play around with audio effects",
+    "img": "https://media.sweetwater.com/m/products/image/a33a7cfc57Xam2hHAmFW0R3kpzAnF3YG3iMX9jpi.jpg?quality=82&width=750&ha=a33a7cfc57eef7be",
+    "tech used": [
+      "Python",
+      "tkinter",
+      "Pygame",
+      "Gitlab",
+      "Pedalboard"
+    ],
+    "concepts learned": [
+      "OOP",
+      "Fullstack desktop development",
+      "Code Architecture",
+      "Reproducability",
+      "User interface creation",
+      "Version control",
+      "Agile/Scrum Practices"
+    ]
+  },
+  {
+    "title": "Wisconsin Loan Data Analysis",
+    "desc": "An optimized Python module for analyzing Wisconsin loan data",
+    "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_vs_Data_Analytics.jpg",
+    "tech used": [
+      "Python",
+      "Pandas",
+      "JupyterLabs"
+    ],
+    "concepts learned": [
+      "Python modules/classes (OOP)",
+      "Binary Search Trees",
+      "Recursion",
+      "Data analysis"
+    ]
+  },
+  {
+    "title": "Image Classifier",
+    "desc": "A PyTorch-based neural network to classify a dataset of 60,000 clothing images, achieving an 86% prediction accuracy",
+    "img": "https://uploads-ssl.webflow.com/608353cb0067e32edaa3e4c9/619518f59591bd962396074d_Content%20Images%20-%20Which%20AI%20Is%20Learn%20by%20Its%20Own%20(2).jpg",
+    "tech used": [
+      "Python",
+      "Jetbrains (PyCharm)",
+      "Pytorch"
+    ],
+    "concepts learned": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Neural Networks",
+      "Training, testing, and evaluationg a prediction model"
+    ]
+  }
+]

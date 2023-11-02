@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import styles from './viewmore.module.scss';
-import projectData from '../components/projects.json';
+import projectData from '../components/new_project_data.json';
 const ViewMore = () => {
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
     useEffect(() => {
+        console.log(project);
         const urlParams = new URLSearchParams(window.location.search);
         const projectToView = urlParams.get('project');
         const index = projectData.findIndex(obj => obj.title === projectToView);
@@ -39,7 +40,31 @@ const ViewMore = () => {
                             </div>
 
                             <div className={styles.techAndConcepts}>
-                                <div className={styles.list}>
+
+                                
+
+                                    {Object.keys(project).map((key) => (
+
+                                        typeof project[key] === 'object' && (
+                                            <>
+                                            <div className={styles.list}>
+                                                <h2>{key}</h2>
+                                                <ul>
+                                                    {project[key].map((item, i) => (
+                                                        <li key={i}>
+                                                            {item}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            
+                                            </>
+                                        )
+                                    ))}
+
+                                
+
+                                {/*  <div className={styles.list}>
                                     <h2>Tech Used:</h2>
                                     <ul>
                                         {project.tech.map((item) => (
@@ -47,6 +72,8 @@ const ViewMore = () => {
                                         ))}
                                     </ul>
                                 </div>
+
+
                                 <div className={styles.list}>
                                     <h2>Concepts Learned:</h2>
                                     <ul>
@@ -54,7 +81,7 @@ const ViewMore = () => {
                                             <li><p>{item}</p></li>
                                         ))}
                                     </ul>
-                                </div>
+                                </div> */}
 
 
                             </div>

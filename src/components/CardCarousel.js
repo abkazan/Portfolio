@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from './cardcarousel.module.scss';
-import projects from './projects.json';
+import projects from './new_project_data.json';
 const CardCarousel = () => {
     const navivate = useNavigate();
     const goToViewMore = (title) => {

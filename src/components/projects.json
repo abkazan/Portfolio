@@ -3,7 +3,7 @@
         "title": "Bucksin6ixffsn",
         "desc": "A website for the Bucksin6ixffsn podcast, written in React with backend admin authentication using an Express server",
         "img": "https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg", 
-        "tech": ["ReactJs", "ExpressJs", "NodeJs", "Firebase", "Git", "VSCode"],
+        "tech": ["ReactJs", "ExpressJs", "NodeJs", "Firebase", "JSON Web Tokens","Git", "VSCode"],
         "concepts": ["Fullstack web development", "cybersecurity", "OOP", "Database managment", "APIs"]
     },
     {
