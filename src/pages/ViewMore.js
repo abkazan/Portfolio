@@ -6,7 +6,7 @@ const ViewMore = () => {
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
     useEffect(() => {
-        console.log(project);
+        
         const urlParams = new URLSearchParams(window.location.search);
         const projectToView = urlParams.get('project');
         const index = projectData.findIndex(obj => obj.title === projectToView);
