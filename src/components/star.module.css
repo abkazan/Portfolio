@@ -21,7 +21,7 @@
     position: relative;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 50vh;
    
     
 }
@@ -107,8 +107,6 @@
 }
 .star span:nth-child(9){
     top: 500px;
-    
-    
     animation-duration: 1.75s;
 } 
 /* 
