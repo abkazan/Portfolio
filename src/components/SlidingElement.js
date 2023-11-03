@@ -17,7 +17,6 @@ const SlidingElement = ({ title, items, dir, delay }) => {
     }, [items]);
 
     const toggleOpen = () => {
-
         if (open) {
             setShrinking(true);
             setTimeout(() => {
@@ -27,7 +26,6 @@ const SlidingElement = ({ title, items, dir, delay }) => {
         } else {
             setOpen(!open);
         }
-
     };
 
 
@@ -57,8 +55,6 @@ const SlidingElement = ({ title, items, dir, delay }) => {
                     ))}
                 </ul>
             </div>
-            {/*  )} */}
-
         </>
 
     );
