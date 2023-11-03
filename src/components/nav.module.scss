@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,32 +6,35 @@
 
   padding: 10px; /* Add padding for better visibility */
   z-index: 1000; /* Adjust the z-index to ensure it's above other elements */
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 100px;
-  margin: 15px;
+  margin: 10px;
   border: 1px groove grey;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+  }
+  .collapse /* collapse button*/ {
+    animation: fadeIn 1s forwards;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px 0 10px 0;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    z-index: 100;
+    font-weight: bold;
+  }
 }
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 80px;
-}
-.collapse {
-  animation: fadeIn 1s forwards;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 35px;
-  height: 35px;
-  border-radius: 20px 0 10px 0;
-  border: none;
-  background-color: blueviolet;
-  color: white;
-  z-index: 100;
-}
+
 .collapse:hover {
   background-color: rgba(167, 111, 219, 0.782);
 }
@@ -66,7 +69,7 @@
   border-radius: 20px;
   text-align: center;
   /* width: 90px;
-    height: 150px; */
+  height: 150px; */
 }
 @keyframes rotate {
   0% {
@@ -75,14 +78,14 @@
   50% {
     transform: rotate(360deg); /* Ending rotation angle (360 degrees) */
     border-radius: 20px;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     display: none;
   }
   100% {
     transform: rotate(360deg);
-    width: 140px;
-    height: 165px;
+    width: 100px;
+    height: 150px;
   }
 }
 .links {
@@ -91,31 +94,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    .a {
+      text-decoration: none;
+      color: blueviolet;
+    }
+    > li {
+      margin: 8px 0px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 0.9em;
+      &:hover {
+        background-color: #98ff98;
+        border-radius: 10px;
+      }
+    }
+  }
 }
-.links ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-.links a {
-  text-decoration: none;
-  color: blueviolet;
-}
-.links li {
-  margin: 8px 0px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-.links li:hover {
-  background-color: #98ff98;
-  border-radius: 10px;
-}
+
 .navbar.transition {
   /* border: 1px solid red; */
 
-  width: 140px;
-  height: 170px;
+  width: 100px;
+  height: 150px;
 }
 
 .links.collapsing {
@@ -134,8 +138,8 @@
 }
 @keyframes collapse {
   0% {
-    width: 140px;
-    height: 165px;
+    width: 100px;
+    height: 150px;
   }
   50% {
     border-radius: 20px;
@@ -144,8 +148,8 @@
     border-radius: 30px;
   }
   100% {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 100px;
   }
 }
@@ -167,7 +171,7 @@
     margin: 5px;
   }
   .icon {
-    height: 40px;
+    height: 40px !important;
   }
   .navbar.expanded {
     animation: rotate 2s ease-in-out forwards;
@@ -175,7 +179,7 @@
       height: 150px; */
   }
   .links {
-    font-size: .85em;
+    font-size: 0.9em;
   }
   @keyframes rotate {
     0% {
@@ -211,7 +215,7 @@
     100% {
       width: 50px;
       height: 50px;
-      border-radius: 100px;
+      border-radius: 50%;
     }
   }
 }

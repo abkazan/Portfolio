@@ -23,7 +23,7 @@ const SlidingElement = ({ title, items, dir, delay }) => {
             setTimeout(() => {
                 setShrinking(false);
                 setOpen(!open);
-            }, 2000)
+            }, 1000)
         } else {
             setOpen(!open);
         }

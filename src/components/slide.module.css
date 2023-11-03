@@ -1,6 +1,6 @@
 .container {
   overflow: hidden;
-  width: 90vw;
+  width: 80vw;
   display: grid;
   place-items: center;
   position: relative;
@@ -31,11 +31,7 @@
   
 }
 .title, .viewAllBtn {
-  background: radial-gradient(
-    circle,
-    rgb(63, 210, 251) 0%,
-    rgba(252, 70, 107, 1) 100%
-  );
+  background-color: #02f840;
 }
 .title {
   position: absolute;
@@ -51,26 +47,7 @@
 .title h2, .viewAllBtn {
   align-self: flex-start;
   color: #020523;
-  text-shadow: -1px 0 #ff00cc, 0 1px #00ffff, 1px 0 #ff00cc, 0 -1px #00ffff;
-  
-  animation: glitch 2s infinite;
-}
-@keyframes glitch {
-  0% {
-    text-shadow: -1px 0 #ff00cc, 0 1px #00ffff, 1px 0 #ff00cc, 0 -1px #00ffff;
-  }
-  25% {
-    text-shadow: -1px 0 #ff00cc, 0 1px #00ffff, 1px 0 #00ffff, 0 -1px #ff00cc;
-  }
-  50% {
-    text-shadow: -1px 0 #00ffff, 0 1px #ff00cc, 1px 0 #00ffff, 0 -1px #ff00cc;
-  }
-  75% {
-    text-shadow: -1px 0 #00ffff, 0 1px #ff00cc, 1px 0 #ff00cc, 0 -1px #00ffff;
-  }
-  100% {
-    text-shadow: -1px 0 #ff00cc, 0 1px #00ffff, 1px 0 #ff00cc, 0 -1px #00ffff;
-  }
+
 }
 
 .viewAllBtn {
@@ -83,7 +60,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 5vh;
+  padding: 2px;
+  
   border: none;
   font-size: 1em;
   padding-right: 0.5em;
@@ -105,15 +83,16 @@
   }
 }
 .iconContainer.open {
-  animation: flip 2s ease forwards;
+  animation: flip 1s ease forwards;
 }
+
 @keyframes flip {
   100% {
     transform: rotate(180deg);
   }
 }
 .iconContainer.shrinking {
-  animation: unflip 2s ease forwards;
+  animation: unflip 1s ease forwards;
 }
 @keyframes unflip {
   0% {
@@ -221,7 +200,7 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 1s ease-in-out;
-  width: 90vw;
+  width: 80vw;
   /* border: 5px groove blue; */
   /* margin-left: 30vw; */
   position: relative;
@@ -230,7 +209,7 @@
 }
 .dropdown.open {
   max-height: 50vh;
-  animation: drop 2s ease-in-out forwards;
+  animation: drop 1s ease-in-out forwards;
 }
 @keyframes drop {
   0% {
@@ -243,7 +222,7 @@
 }
 
 .dropdown.shrinking {
-  animation: shrink 2s ease-in-out forwards;
+  animation: shrink 1s ease-in-out forwards;
 }
 
 @keyframes shrink {

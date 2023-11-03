@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import styles from './nav.module.css';
+import styles from './nav.module.scss';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -37,24 +37,28 @@ const Navbar = () => {
     return (
         <>
 
-            <div className={`${styles.navbar} ${expanded ? styles.expanded : ''}  ${collapsing ? styles.collapsing : ''}`} onClick={expanded ? dummy : handleClick}>
+            <div className={
+                `${styles.navbar} 
+                 ${expanded ? styles.expanded : ''}  
+                 ${collapsing ? styles.collapsing : ''}`} 
+            onClick={expanded ? dummy : handleClick}>
 
                 {expanded ? (
-                    
+
                     transition && (
                         <>
                         <button className={`${styles.collapse} ${collapsing ? styles.collapsing : ''}`} onClick={collapse}>^</button>
                         <nav className={`${styles.links}  ${collapsing ? styles.collapsing : ''}`}>
                             <ul onClick={collapse}>
-                                <li><Link to='/'>Home</Link></li>
-                                <li><Link to='/about'>About</Link></li>
-                                <li><Link to='/portfolio'>Portfolio</Link></li>
-                                <li><Link to='/contact'>Contact</Link></li>
+                                <li><Link to='/' className={styles.a}>Home</Link></li>
+                                <li><Link to='/about' className={styles.a}>About</Link></li>
+                                <li><Link to='/portfolio' className={styles.a}>Portfolio</Link></li>
+                                <li><Link to='/contact' className={styles.a}>Contact</Link></li>
                             </ul>
                         </nav>
                         </>
                     ))
-
+                    
                     : (
                         <FontAwesomeIcon icon={faBars} className={styles.icon}/>
                     )}

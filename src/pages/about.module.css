@@ -8,12 +8,21 @@
 .pageHeading {
    font-size: 2rem;
    width: 75%;
-   margin: 10vh 0;
+   margin: 5vh 0;
    text-align: center;
    color: white;
    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
 }
-
+@media (min-width: 501px) and (max-width: 730px) {
+   .pageHeading {
+      font-size: 1.5rem;
+   }
+}
+@media (max-width: 500px) {
+   .pageHeading {
+      font-size: 1rem;
+   }
+}
 /* .container {
     display: flex;
     justify-content: center;
@@ -67,64 +76,7 @@
 .list h3 {
     margin-bottom: 3vh;
 }
-.glitch {
-    position: relative;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #fff;
-    letter-spacing: 5px;
-    z-index: 1;
-    
- }
- .glitch:before,
-.glitch:after {
-   display: block;
-   content: attr(data-glitch);
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0.8;
-}
 
-.glitch:before {
-   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-   color: #0ff;
-   z-index: -1;
-}
-
-.glitch:after {
-   animation: glitch-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-   color: #ff00ff;
-   z-index: -2;
-}
-
-@keyframes glitch-color {
-   0% {
-      transform: translate(0);
-   }
-
-   20% {
-      transform: translate(-3px, 3px);
-   }
-
-   40% {
-      transform: translate(-3px, -3px);
-   }
-
-   60% {
-      transform: translate(3px, 3px);
-   }
-}
-.text3d {
-    font-size: 48px; /* Font size */
-    font-family: Arial, sans-serif;
-    color: #09f6f2; /* Text color */
-    text-transform: uppercase;
-    text-shadow: 3px 3px 0 #000114, 6px 6px 0 #02f840, 9px 9px 0 #000114;
-    /* 3D effect using text-shadow */
-    letter-spacing: 4px;
-}
 .story {
    background-color: #000114;
    margin-bottom: 100vh;
