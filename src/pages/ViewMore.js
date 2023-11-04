@@ -6,11 +6,11 @@ const ViewMore = () => {
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
     useEffect(() => {
-        
         const urlParams = new URLSearchParams(window.location.search);
         const projectToView = urlParams.get('project');
+        /* console.log(`project to view: ${projectToView}`); */
         const index = projectData.findIndex(obj => obj.title === projectToView);
-        console.log(projectData[index]);
+        /* console.log(projectData[index]); */
 
         setProject(projectData[index]);
         setTimeout(() => {
