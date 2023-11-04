@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import styles from './viewmore.module.scss';
 import projectData from '../components/new_project_data.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const ViewMore = () => {
     const [loading, setLoading] = useState(true);
     const [project, setProject] = useState('');
@@ -16,9 +18,20 @@ const ViewMore = () => {
         setTimeout(() => {
             setLoading(false);
         }, 1000)
-    }, [])
+    }, []);
+    const [goingBack, setGoingBack] = useState(false);
+    const goBack = () => {
+        setGoingBack(true);
+        setTimeout(() => {
+            window.history.back()
+        }, 700);
+    }
     return (
         <>
+        <button className={`${styles.backBtn} ${goingBack ? styles.goingBack : ''}`}
+        onClick={goBack}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+            </button>
             <div className={styles.page}>
                 {loading ? (
                     <>
@@ -31,6 +44,7 @@ const ViewMore = () => {
                     </>
                 ) : (
                     <>
+                        
                         <h1>{project.title}</h1>
 
                         <div className={styles.container}>

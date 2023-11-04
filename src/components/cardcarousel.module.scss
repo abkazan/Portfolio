@@ -162,8 +162,33 @@
   border-radius: 10px;
   width: 100px;
   height: 30px;
-  border: none;
+  border: 1px solid black;
+  background:  linear-gradient(121deg, rgba(72,27,179,1) 10%, rgba(153,51,51,1) 45%, rgba(249,119,2,1) 100%);;
+  color: white;
+  
+  font-weight: bold !important;
+  font-size: .9em;
+  
+  &:hover {
+    animation: illuminate 1s ease forwards;
+  }
+  &:active {
+    transform: scale(.9);
+    opacity: .7;
+  }
+  @keyframes illuminate {
+    0% {
+      box-shadow: nonw;
+    }
+    100% {
+      box-shadow: 3px 3px 15px #fff, 
+                  -3px -3px 15px #fff, 
+                  -3px 3px 15px #fff, 
+                  3px -3px 15px #fff;
+    }
+  }
 }
+
 
 @media (max-height: 450px) {
   .container div{
