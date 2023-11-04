@@ -30,46 +30,40 @@ const HomePage = () => {
     }, []);
 
     return (
-        <>
-            <div className={styles.page}>
-                {imageLoaded ? (
-                    <>
-                        <h1 className={styles.heading}>Hello, My name is Andrew Kazan!</h1>
-                        <div className={styles.imgAndTxt}>
-                            <div className={styles.imgContainer}>
-                                <img src={imgUrl} alt="Profile Pic" />
-                            </div>
-                            <div className={styles.txtContainer}>
-                                <p>Are you looking for a junior developer who can also share his thoughts in an intelligent,
-                                    articulate and personable way? I'm your guy!</p>
-                                <div className={styles.socials}>
-                                    <a href="https://www.linkedin.com/in/andrew-kazan-b5211b20a/" target="_blank" rel="noreferrer">
-                                        <img src={linkedinLogo} alt="linkedin" />
-                                    </a>
-                                    <a href="https://github.com/abkazan/My-Code" target="_blank" rel="noreferrer">
-                                        <img src={githubLogo} alt="github" />
-                                    </a>
-                                </div>
-                            </div>
 
+        <div className={styles.page}>
+            {imageLoaded ? (
+                <>
+                    <h1 className={styles.heading}>Hello, My name is Andrew Kazan!</h1>
+                    <div className={styles.imgAndTxt}>
+                        <div className={styles.imgContainer}>
+                            <img src={imgUrl} alt="Profile Pic" />
                         </div>
-                    </>
-                ) : (
-                    <div className={styles.loader}>
-                        <Loader />
-                        <h1>Loading...</h1>
+                        <div className={styles.txtContainer}>
+                            <p>Are you looking for a junior developer who can also share his thoughts in an intelligent,
+                                articulate and personable way? I'm your guy!</p>
+                            <div className={styles.socials}>
+                                <a href="https://www.linkedin.com/in/andrew-kazan-b5211b20a/" target="_blank" rel="noreferrer">
+                                    <img src={linkedinLogo} alt="linkedin" />
+                                </a>
+                                <a href="https://github.com/abkazan/My-Code" target="_blank" rel="noreferrer">
+                                    <img src={githubLogo} alt="github" />
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                )}
+                </>
+            ) : (
+                <div className={styles.loader}>
+                    <Loader />
+                    <h1>Loading...</h1>
+                </div>
+            )}
+
+        </div>
 
 
-
-            </div>
-
-
-
-
-
-        </>
     );
 }
 export default HomePage;

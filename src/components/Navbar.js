@@ -17,8 +17,8 @@ const Navbar = () => {
                 setTransition(true);
             }, 2000)
         }
-        
-        
+
+
     };
     const collapse = () => {
         setCollapsing(true);
@@ -27,44 +27,48 @@ const Navbar = () => {
             setTransition(false);
             setCollapsing(false);
         }, 1000)
-        
+
     };
     const dummy = () => {
+        
         console.log('this function does nothing...');
     };
-    
+
     const [collapsing, setCollapsing] = useState(false);
     return (
-        <>
 
-            <div className={
-                `${styles.navbar} 
+
+        <div className={
+            `${styles.navbar} 
                  ${expanded ? styles.expanded : ''}  
-                 ${collapsing ? styles.collapsing : ''}`} 
-            onClick={expanded ? dummy : handleClick}>
+                 ${collapsing ? styles.collapsing : ''}`}
+            onClick={expanded ? dummy : handleClick} onKeyDown={dummy}>
 
-                {expanded ? (
-
-                    transition && (
-                        <>
+            {expanded ? (
+                <>
+                <FontAwesomeIcon icon={faBars} className={`${styles.icon} ${transition ? styles.fadeOut : ''}`}/>
+                
+                {transition && (
+                    <>
+                         
                         <button className={`${styles.collapse} ${collapsing ? styles.collapsing : ''}`} onClick={collapse}>^</button>
                         <nav className={`${styles.links}  ${collapsing ? styles.collapsing : ''}`}>
-                            <ul onClick={collapse}>
-                                <li><Link to='/' className={styles.a}>Home</Link></li>
-                                <li><Link to='/about' className={styles.a}>About</Link></li>
-                                <li><Link to='/portfolio' className={styles.a}>Portfolio</Link></li>
-                                <li><Link to='/contact' className={styles.a}>Contact</Link></li>
+                            <ul>
+                                <li onClick={collapse} onKeyDown={dummy}><Link to='/' className={styles.a}>Home</Link></li>
+                                <li onClick={collapse} onKeyDown={dummy}><Link to='/about' className={styles.a}>About</Link></li>
+                                <li onClick={collapse} onKeyDown={dummy}><Link to='/portfolio' className={styles.a}>Portfolio</Link></li>
+                                <li onClick={collapse} onKeyDown={dummy}><Link to='/contact' className={styles.a}>Contact</Link></li>
                             </ul>
                         </nav>
-                        </>
-                    ))
-                    
-                    : (
-                        <FontAwesomeIcon icon={faBars} className={styles.icon}/>
-                    )}
-            </div>
+                    </>
+                )}
+                </>
+                ) : (
+                    <FontAwesomeIcon icon={faBars} className={styles.icon} />
+                )}
+        </div>
 
-        </>
+
     );
 };
 

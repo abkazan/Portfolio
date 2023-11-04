@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from './cardcarousel.module.scss';
 import projects from './new_project_data.json';
+import CoolBtn from "./CoolBtn";
 const CardCarousel = () => {
     const navivate = useNavigate();
     const goToViewMore = (title) => {
@@ -12,11 +13,11 @@ const CardCarousel = () => {
     return (
         <div className={styles.container}>
             {projects.map((item) => (
-                <div>
+                <div key={item}>
                     <div className={styles.content}>
                         <h3 className={styles.heading}>{item.title}</h3>
                         <span>{item.desc}</span>
-                        <button className={styles.viewMoreButton} onClick={()=> goToViewMore(item.title)}>Learn More</button>
+                        <CoolBtn />
                     </div>
                 </div>
             ))}

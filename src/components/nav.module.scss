@@ -19,6 +19,10 @@
     transform: translate(-50%, -50%);
     height: 60px;
   }
+  .icon.fadeOut {
+    
+    animation: fadeOut .5s ease forwards;
+  }
   .collapse /* collapse button*/ {
     animation: fadeIn 1s forwards;
     position: fixed;
@@ -123,7 +127,7 @@
 }
 
 .links.collapsing {
-  animation: fadeOut 1s ease forwards;
+  animation: fadeOut .5s ease forwards;
 }
 @keyframes fadeOut {
   0% {
@@ -154,7 +158,7 @@
   }
 }
 .icon {
-  animation: fadeIn 1s forwards;
+  animation: fadeIn .5s forwards;
 }
 @keyframes fadeIn {
   0% {

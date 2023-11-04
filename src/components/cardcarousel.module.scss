@@ -80,10 +80,26 @@
     }
     
     &:hover .content .heading {
-      animation: fadeIn 0.5s ease-in-out forwards;
+      animation: fadeIn 0.5s ease-in-out forwards, textGlow 3s ease infinite 1s;
       animation-delay: 0.5s;
       font-size: 1.5em;
       opacity: 0;
+      border: 2px groove #51e7fb;
+      border-radius: 20px;
+      padding: 5px;
+      
+      
+    }
+    @keyframes textGlow {
+      0% {
+        text-shadow: 0 0 5px #51e7fb, 0 0 10px #51e7fb, 0 0 20px #51e7fb;
+      }
+      50% {
+        text-shadow: 0 0 5px #51e7fb, 0 0 20px #51e7fb, 0 0 40px #51e7fb;
+      }
+      100% {
+        text-shadow: 0 0 5px #51e7fb, 0 0 10px #51e7fb, 0 0 20px #51e7fb;
+      }
     }
 
     &:hover .content span {
@@ -132,3 +148,14 @@
     transition: flex 1s;
   } */
 }
+.viewMoreBtn {
+  
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  border-top: 1px solid rgba(255, 49, 49, 0.5);
+  border-right: 1px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+  border-left: 1px solid rgba(255, 255, 113, 0.5);
+}
+

@@ -25,6 +25,6 @@
         "desc": "A PyTorch-based neural network to classify a dataset of 60,000 clothing images, achieving an 86% prediction accuracy",
         "img": "https://uploads-ssl.webflow.com/608353cb0067e32edaa3e4c9/619518f59591bd962396074d_Content%20Images%20-%20Which%20AI%20Is%20Learn%20by%20Its%20Own%20(2).jpg",
         "tech": ["Python", "Jetbrains (PyCharm)", "Pytorch"],
-        "concepts": ["Artificial Intelligence", "Machine Learning", "Neural Networks", "Training, testing, and evaluationg a prediction model"]
+        "concepts": ["Artificial Intelligence", "Machine Learning", "Neural Networks", "Training, testing, and evaluating a prediction model"]
     }
 ]

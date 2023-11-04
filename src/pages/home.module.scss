@@ -79,6 +79,8 @@
   .page {
     .heading {
       width: 80%;
+      
+      
     }
     .imgContainer {
       > img {
@@ -100,6 +102,16 @@
         }
       }
     }
+  }
+}
+@media (max-width: 355px) {
+  .page {
+    justify-content: flex-start;
+    gap: 10vh;
+    padding-top: 10vh;
+  }
+  .heading {
+    font-size: 1.5em;
   }
 }
 @media (min-width: 701px) and (max-width: 1023px) {
