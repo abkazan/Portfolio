@@ -36,6 +36,8 @@
     color: white;
     z-index: 100;
     font-weight: bold;
+    font-size: 1em;
+    text-align: center;
   }
 }
 
@@ -101,13 +103,13 @@
   > ul {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 12px;
     .a {
       text-decoration: none;
       color: blueviolet;
     }
     > li {
-      margin: 8px 0px;
+      margin: 6px 0px;
       font-weight: bold;
       letter-spacing: 1px;
       font-size: 0.9em;
@@ -183,7 +185,10 @@
       height: 150px; */
   }
   .links {
-    font-size: 0.9em;
+    font-size: 0.95em;
+    li {
+      margin: 8px 0px !important;
+    }
   }
   @keyframes rotate {
     0% {

@@ -7,10 +7,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.heading, .subheading {
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+
+}
 .heading {
     color: white;
     padding-top: 5vh;
-    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
     font-size: 3.5em;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -29,4 +32,12 @@
     margin: 5vh 0;
     color: white;
     font-size: 1.5em;
+    width: 80%;
+    
+    align-self: center;
+}
+@media (max-height: 450px) {
+    .heading {
+        font-size: 2em !important; 
+    }
 }

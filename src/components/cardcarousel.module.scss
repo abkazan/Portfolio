@@ -67,7 +67,7 @@
     }
 
     &:hover {
-      flex: 0 0 25vw;
+      flex: 0 0 30vw;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
       /* opacity: .5; */
@@ -80,14 +80,10 @@
     }
     
     &:hover .content .heading {
-      animation: fadeIn 0.5s ease-in-out forwards, textGlow 3s ease infinite 1s;
+      animation: fadeIn 0.5s ease-in-out forwards, textGlow 2s ease infinite 1s;
       animation-delay: 0.5s;
       font-size: 1.5em;
       opacity: 0;
-      border: 2px groove #51e7fb;
-      border-radius: 20px;
-      padding: 5px;
-      
       
     }
     @keyframes textGlow {
@@ -104,8 +100,19 @@
 
     &:hover .content span {
       font-size: 1em;
-      width: 24vw;
+      width: 100%;
       text-align: center;
+      color: rgb(204, 238, 6); /* Text color */
+      -webkit-text-stroke: 0.1px black;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgb(92, 76, 240);
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 5%;
+      animation: fadeIn 0.5s ease-in-out forwards;
+      animation-delay: 0.5s;
+      
+      opacity: 0;
+    
     }
   }
 }
@@ -117,12 +124,16 @@
     opacity: 1;
   }
 }
-@media (min-width: 601px) and (max-width: 900px) {
+@media (max-width: 900px) {
   .heading {
     
     font-size: 1.2em !important;
       
     
+  }
+  .content span {
+    font-size: .8em !important;
+
   }
 }
 @media (max-width: 600px) {
@@ -144,18 +155,29 @@
   .container > div {
     flex: 0 0 20vw; /* Default style for all divs */
   }
-  /* .container > div {
-    transition: flex 1s;
-  } */
+  
 }
 .viewMoreBtn {
   
   border-radius: 10px;
   width: 100px;
   height: 30px;
-  border-top: 1px solid rgba(255, 49, 49, 0.5);
-  border-right: 1px solid rgba(0, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
-  border-left: 1px solid rgba(255, 255, 113, 0.5);
+  border: none;
+}
+
+@media (max-height: 450px) {
+  .container div{
+    &:hover {
+      transform: translatey(-20px);
+    }
+    
+  }
+  .heading {
+    font-size: 1em !important; 
+
+  }
+  .content span {
+    font-size: .7em !important;
+  }
 }
 
