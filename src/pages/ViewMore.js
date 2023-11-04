@@ -48,7 +48,7 @@ const ViewMore = () => {
                     </>
                 ) : (
                     <>
-
+                    
                         <h1>{project.title}</h1>
 
                         <div className={styles.container}>
