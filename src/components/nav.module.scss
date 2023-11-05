@@ -11,7 +11,9 @@
   border-radius: 100px;
   margin: 10px;
   border: 1px groove grey;
-
+  &:hover {
+    opacity: .6;
+  }
   .icon {
     position: absolute;
     top: 50%;
