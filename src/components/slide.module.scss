@@ -11,7 +11,7 @@
     rgba(9, 9, 121, 1) 21%,
     rgba(0, 212, 255, 1) 100%
   );
-  
+
   border-radius: 10px;
   /* border: 1px solid red; */
   z-index: 2;
@@ -29,9 +29,9 @@
   /* text-transform: uppercase; */
   z-index: 2;
   text-align: center;
-  
 }
-.title, .viewAllBtn {
+.title,
+.viewAllBtn {
   background-color: #02f840;
 }
 .title {
@@ -43,12 +43,11 @@
   border-radius: 0 0 10px 0;
   padding: 0 0.5em;
   font-size: 1em;
-  
 }
-.title h2, .viewAllBtn {
+.title h2,
+.viewAllBtn {
   align-self: flex-start;
   color: #020523;
-
 }
 
 .viewAllBtn {
@@ -62,7 +61,7 @@
   bottom: 0;
   right: 0;
   padding: 2px;
-  
+
   border: none;
   font-size: 1em;
   padding-right: 0.5em;
@@ -72,7 +71,7 @@
 
 .iconContainer {
   display: grid;
-  place-items: center; 
+  place-items: center;
   border: 1px solid black;
   border-radius: 50%;
   width: 25px;
@@ -102,7 +101,6 @@
   100% {
     transform: rotate(0deg);
   }
-  
 }
 .viewAllBtn:hover {
   filter: invert(100%);
@@ -113,8 +111,7 @@
 .viewAllBtn:hover h2 {
   color: white;
 }
-.viewAllBtn:hover .iconContainer{
-  
+.viewAllBtn:hover .iconContainer {
   color: white;
   border: 1px solid white;
 }
@@ -185,8 +182,7 @@
   position: relative;
   bottom: 29vh;
   color: white;
-  border-radius: 0 0 20px 20px ;
-  
+  border-radius: 0 0 20px 20px;
 }
 
 .dropdown ul {
@@ -210,13 +206,7 @@
   margin: 0;
   text-align: center;
   li {
-    border: 2px solid rgb(204, 238, 6);
-        border-radius: 10px;
-        padding: 5px;
-        margin: 2px;
-        text-transform: uppercase;
-        box-shadow: 3px 3px 10px rgb(112, 62, 188);
-   
+    text-transform: uppercase;
   }
 }
 
@@ -226,7 +216,6 @@
 }
 @keyframes drop {
   0% {
-    
     bottom: 29vh;
     margin-bottom: none;
   }
@@ -242,27 +231,38 @@
 @keyframes shrink {
   0% {
     bottom: 8vh;
-    
   }
   100% {
     bottom: 29vh;
   }
 }
-@media (max-width: 600px) {
-  .title, .viewAllBtn, .dropdown {
-    font-size: .75em;
+@media (min-width: 500px) {
+  .dropdown ul li {
+    border: 2px solid rgb(204, 238, 6);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 3px 3px 10px rgb(112, 62, 188);
   }
-  
+}
+@media (max-width: 600px) {
+  .title,
+  .viewAllBtn,
+  .dropdown {
+    font-size: 0.75em;
+  }
+
   .element {
     font-size: 1.2em;
   }
-  
 }
 @media (min-width: 601px) and (max-width: 900px) {
   .element {
     font-size: 1.5em;
   }
-  .title, .viewAllBtn, .dropdown {
-    font-size: .8em;
+  .title,
+  .viewAllBtn,
+  .dropdown {
+    font-size: 0.8em;
   }
 }
