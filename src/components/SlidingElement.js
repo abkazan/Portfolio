@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './slide.module.css';
+import styles from './slide.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 

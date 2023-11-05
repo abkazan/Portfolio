@@ -183,7 +183,7 @@
   /* border: 5px groove blue; */
   /* margin-left: 30vw; */
   position: relative;
-  bottom: 28vh;
+  bottom: 29vh;
   color: white;
   border-radius: 0 0 20px 20px ;
   
@@ -209,7 +209,7 @@
   z-index: 1;
   margin: 0;
   text-align: center;
-  >li {
+  li {
     border: 2px solid rgb(204, 238, 6);
         border-radius: 10px;
         padding: 5px;
@@ -226,7 +226,8 @@
 }
 @keyframes drop {
   0% {
-    bottom: 28vh;
+    
+    bottom: 29vh;
     margin-bottom: none;
   }
   100% {
@@ -241,9 +242,10 @@
 @keyframes shrink {
   0% {
     bottom: 8vh;
+    
   }
   100% {
-    bottom: 28vh;
+    bottom: 29vh;
   }
 }
 @media (max-width: 600px) {
