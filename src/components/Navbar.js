@@ -9,7 +9,7 @@ const Navbar = () => {
     const [transition, setTransition] = useState(false);
     const handleClick = () => {
         setExpanded(!expanded);
-        console.log(`current value of expanded: ${expanded}`);
+        /* console.log(`current value of expanded: ${expanded}`); */
         if (transition) {
             setTransition(false);
         } else {
@@ -53,7 +53,7 @@ const Navbar = () => {
                          
                         <button className={`${styles.collapse} ${collapsing ? styles.collapsing : ''}`} onClick={collapse}>^</button>
                         <nav className={`${styles.links}  ${collapsing ? styles.collapsing : ''}`}>
-                            <ul>
+                            <ul  onKeyDown={dummy}>
                                 <li onClick={collapse} onKeyDown={dummy}><Link to='/' className={styles.a}>Home</Link></li>
                                 <li onClick={collapse} onKeyDown={dummy}><Link to='/about' className={styles.a}>About</Link></li>
                                 <li onClick={collapse} onKeyDown={dummy}><Link to='/portfolio' className={styles.a}>Portfolio</Link></li>
