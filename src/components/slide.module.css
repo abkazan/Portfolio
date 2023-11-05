@@ -183,7 +183,7 @@
   /* border: 5px groove blue; */
   /* margin-left: 30vw; */
   position: relative;
-  bottom: 22vh;
+  bottom: 30vh;
   color: white;
   border-radius: 0 0 20px 20px ;
   
@@ -196,7 +196,7 @@
     3,
     1fr
   ); /* Adjust the number of columns as needed */
-  gap: 20px;
+  gap: 10px;
   place-items: center;
   padding: 20px 0;
   font-size: 1em;
@@ -213,13 +213,12 @@
     border: 2px solid rgb(204, 238, 6);
         border-radius: 10px;
         padding: 5px;
-        margin: 5px;
+        margin: 2px;
         text-transform: uppercase;
         box-shadow: 3px 3px 10px rgb(112, 62, 188);
    
   }
 }
-
 
 .dropdown.open {
   max-height: 50vh;
@@ -227,7 +226,7 @@
 }
 @keyframes drop {
   0% {
-    bottom: 22vh;
+    bottom: 30vh;
     margin-bottom: none;
   }
   100% {
@@ -244,7 +243,7 @@
     bottom: 8vh;
   }
   100% {
-    bottom: 22vh;
+    bottom: 30vh;
   }
 }
 @media (max-width: 600px) {
