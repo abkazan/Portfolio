@@ -183,7 +183,7 @@
   /* border: 5px groove blue; */
   /* margin-left: 30vw; */
   position: relative;
-  bottom: 30vh;
+  bottom: 28vh;
   color: white;
   border-radius: 0 0 20px 20px ;
   
@@ -226,7 +226,7 @@
 }
 @keyframes drop {
   0% {
-    bottom: 30vh;
+    bottom: 28vh;
     margin-bottom: none;
   }
   100% {
@@ -243,7 +243,7 @@
     bottom: 8vh;
   }
   100% {
-    bottom: 30vh;
+    bottom: 28vh;
   }
 }
 @media (max-width: 600px) {
