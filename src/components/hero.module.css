@@ -8,13 +8,12 @@
   justify-content: center;
   align-items: center;
   /* background-color: #000114; */
-
-
-  height: 40vh;
+  /* border: 1px solid red; */
+  height: 60vh;
   overflow: hidden;
   width: 90vw;
   border-radius: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -43,9 +42,10 @@
 }
 @media (min-width: 1024px) {
   .hero img {
-    width: 80vw;
+    width: 70vw;
   }
 }
+
 .hero h3 {
   font-size: 1em;
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
@@ -60,6 +60,7 @@
   
 }
 @media (min-width: 500px) and (max-width: 700px) {
+  
     .hero img {
       width: 90vw;
     }
@@ -77,6 +78,9 @@
     margin-top: 30px;
     width: 300px !important;
     font-size: .85em;
+  }
+  .heroSection {
+    height: 40vh;
   }
 }
 @-webkit-keyframes blink {
