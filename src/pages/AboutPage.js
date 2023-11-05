@@ -11,9 +11,9 @@ const concepts = ['Web development', 'Object-oriented programming', 'Data Struct
                     'Testing and Debugging',
                     'Code Architecure',
                     'Cyber Security',
-                    'Agile/scrum practices and methodologies',
+                    'Agile/scrum practices',
                     'Data analysis/maintenence']
-const software = ['VSCode', 'Github', 'Figma', 'Firebase', 'Google Cloud, Docs, Slides, Sheets, Forms', 'Microsoft Excel, Powerpoint, Word, Propresenter', 'iMovie', 'Logic Pro X']
+const software = ['VSCode', 'Github', 'Linux Terminal','Figma', 'Firebase', 'Google Cloud','Google Slides', 'Microsoft Word','Microsoft Excel']
 
 const cardContent = [
     {text: "My favorite episode of my favorite show growing up was the SP-129 episode of Spongebob where Squidward time-travels to the future and everything is chrome and high-tech. My five year old brain thought this the coolest thing!", value: require('../images/gifs/future-spongebob.gif')},
