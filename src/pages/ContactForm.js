@@ -43,6 +43,11 @@ function ContactForm() {
       setTimeout(() => {
           setSending(false);
       }, 1500);
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
     }
   
     // You can handle form submission here, e.g., by sending data to a server or displaying a confirmation message.
