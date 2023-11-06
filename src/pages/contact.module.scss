@@ -74,3 +74,19 @@
 
     }
   }
+
+@media (max-width: 600px) {
+  .inputField,
+  .message {
+    font-size: 12px !important;
+    width: 75vw;
+  }
+  .message {
+    height: 100px;
+  }
+  .sendBtn {
+    
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
