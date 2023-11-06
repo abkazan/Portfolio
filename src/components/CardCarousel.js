@@ -17,7 +17,8 @@ const CardCarousel = () => {
                     <div className={styles.content}>
                         <h3 className={styles.heading}>{item.title}</h3>
                         <span>{item.desc}</span>
-                        <button className={styles.viewMoreBtn} onClick={()=> goToViewMore(item.title)}>Learn More
+                        <button className={styles.viewMoreBtn} onClick={()=> goToViewMore(item.title)}>
+                            Learn More
                         </button>
                     </div>
                 </div>

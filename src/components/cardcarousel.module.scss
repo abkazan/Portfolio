@@ -64,6 +64,8 @@
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform .5s ease;
       visibility: hidden;
+      /* font-family: 'Roboto', sans-serif; */
+
     }
 
     &:hover {
@@ -112,6 +114,13 @@
       animation-delay: 0.5s;
       box-shadow: 1px 5px 15px #1e0e3e;
       opacity: 0;
+      /* font-family: 'Roboto', sans-serif; */
+
+      
+      
+
+
+      
     
     }
   }
