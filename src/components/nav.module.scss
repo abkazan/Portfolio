@@ -61,7 +61,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  animation: zoomAway 0.5s linear forwards;
+  animation: zoomAway 0.3s linear forwards;
 }
 
 @keyframes zoomAway {
@@ -84,7 +84,7 @@
 } */
 
 .navbar.expanded {
-  animation: rotate 2s ease-in-out forwards;
+  animation: rotate 1.5s ease-in-out forwards;
   border-radius: 20px;
   text-align: center;
   /* width: 90px;
@@ -153,7 +153,7 @@
   }
 }
 .navbar.collapsing {
-  animation: collapse 1s ease forwards;
+  animation: collapse .5s ease forwards;
 }
 @keyframes collapse {
   0% {
@@ -193,7 +193,7 @@
     height: 40px !important;
   }
   .navbar.expanded {
-    animation: rotate 2s ease-in-out forwards;
+    animation: rotate 1.5s ease-in-out forwards;
     /* width: 90px;
       height: 150px; */
   }

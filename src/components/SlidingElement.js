@@ -44,7 +44,7 @@ const SlidingElement = ({ title, items, dir, delay }) => {
                     <div className={`${styles.iconContainer} ${shrinking ? styles.shrinking : ''} ${open ? styles.open : ''}`}>
                         <FontAwesomeIcon icon={faCaretDown} className={styles.icon}/>
                     </div>
-                    <h2>{`${open ? 'View Less' : 'View All'}`}</h2>
+                    <h2>{`${open ? 'Less' : 'More'}`}</h2>
                 </button>
             </div>
 

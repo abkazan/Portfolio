@@ -15,8 +15,26 @@ function ContactForm() {
     });
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+     try {
+      const response = await fetch('https://express-hello-world-4sgw.onrender.com/portfolio/sendMessage', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Data sent successfully');
+      } else {
+        console.error('Failed to send data');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  
     // You can handle form submission here, e.g., by sending data to a server or displaying a confirmation message.
     console.log('Form submitted with the following data:');
     console.log(formData);

@@ -15,7 +15,7 @@ const Navbar = () => {
         } else {
             setTimeout(() => {
                 setTransition(true);
-            }, 2000)
+            }, 1500)
         }
 
 
@@ -26,7 +26,7 @@ const Navbar = () => {
             setExpanded(false);
             setTransition(false);
             setCollapsing(false);
-        }, 1000)
+        }, 800)
 
     };
     const dummy = () => {
