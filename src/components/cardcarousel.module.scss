@@ -154,7 +154,7 @@ $teal-light-blue: #51e7fb;
     > div {
       &:hover .content span {
         font-size: .8em !important;
-        width: 42vw;
+        width: 45vw;
         line-height: 2em;
       }
       .heading {
@@ -166,7 +166,7 @@ $teal-light-blue: #51e7fb;
     flex: 0 0 10vw; /* Style for unhovered divs when any card in .container is hovered */
   }
   .container > div:hover {
-    flex: 0 0 45vw; /* Style for the hovered card */
+    flex: 0 0 50vw; /* Style for the hovered card */
   }
   .container > div {
     flex: 0 0 20vw; /* Default style for all divs */
