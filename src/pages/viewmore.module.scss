@@ -39,7 +39,7 @@
   flex-direction: column;
   /* gap: 5vh; */
   align-items: center;
-  overflow: scroll;
+  
  
   
   .loading {
@@ -126,14 +126,24 @@
   }
   .page {
     justify-content: flex-start;
-
+    overflow: scroll;
     gap: 5vh;
   }
   .container {
     flex-direction: column;
   }
-  .descAndImg img {
-    width: 80vw !important;
+  .descAndImg {
+    margin-bottom: 5vh;
+  }
+  .descAndImg  {
+    img{ 
+      max-width: 80vw !important;
+    max-height: 55vw !important;
+    }
+    p {
+      font-size: .8em !important;
+    }
+    
   }
   .list {
     padding-top: 10px;

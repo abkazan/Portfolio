@@ -19,6 +19,7 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let responseMessage = ''
     setSending(true);
      try {
       const response = await fetch('https://express-hello-world-4sgw.onrender.com/portfolio/sendMessage', {
@@ -31,17 +32,18 @@ function ContactForm() {
 
       if (response.ok) {
         console.log('Data sent successfully');
-        window.alert('Email sent');
+        responseMessage = 'Email Sent Successfully!';
         
       } else {
         console.error('Failed to send data');
-        window.alert('Error sending messsage. Please try again later');
+        responseMessage = 'Error sending messsage. Please try again later';
       }
     } catch (error) {
       console.error('Error:', error);
     } finally {
       setTimeout(() => {
           setSending(false);
+          window.alert(responseMessage);
       }, 1500);
       setFormData({
         name: '',

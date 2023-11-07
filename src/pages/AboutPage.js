@@ -26,7 +26,7 @@ const AboutPage = () => {
     return (
         <>
             <div className={styles.page}>
-                
+                <h1 className={styles.pageTitle}>About Me:</h1>
               
                 
 
