@@ -74,7 +74,8 @@
 
     > img {
       display: block;
-      height: auto;
+      width: auto;
+      max-height: 75vh;
       border-radius: 20px;
       box-shadow: 5px 5px 30px #1192e9, -5px -5px 30px #1e0e3e;
       filter: brightness(80%);
@@ -141,7 +142,7 @@
     max-height: 55vw !important;
     }
     p {
-      font-size: .8em !important;
+      font-size: 1em !important;
     }
     
   }
