@@ -5,6 +5,12 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap');
+
+$cool-yellow: rgb(204, 238, 6);
+$cool-purple: rgb(92, 76, 240);
+$teal-light-blue: #51e7fb;
+
 .container {
   margin-top: 5vh;
   width: 100%;
@@ -69,7 +75,7 @@
     }
 
     &:hover {
-      flex: 0 0 30vw;
+      flex: 0 0 25vw;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
       /* opacity: .5; */
@@ -86,17 +92,18 @@
       animation-delay: 0.5s;
       font-size: 1.5em;
       opacity: 0;
+      font-family: "Montserrat", sans-serif;
       
     }
     @keyframes textGlow {
       0% {
-        text-shadow: 0 0 5px #51e7fb, 0 0 10px #51e7fb, 0 0 20px #51e7fb;
+        text-shadow: 0 0 5px $teal-light-blue, 0 0 10px $teal-light-blue, 0 0 20px $teal-light-blue;
       }
       50% {
-        text-shadow: 0 0 5px #51e7fb, 0 0 20px #51e7fb, 0 0 40px #51e7fb;
+        text-shadow: 0 0 10px $teal-light-blue, 0 0 20px $teal-light-blue, 0 0 40px $teal-light-blue;
       }
       100% {
-        text-shadow: 0 0 5px #51e7fb, 0 0 10px #51e7fb, 0 0 20px #51e7fb;
+        text-shadow: 0 0 5px $teal-light-blue, 0 0 10px $teal-light-blue, 0 0 20px $teal-light-blue;
       }
     }
 
@@ -115,13 +122,10 @@
       box-shadow: 1px 5px 15px #1e0e3e;
       opacity: 0;
       /* font-family: 'Roboto', sans-serif; */
-
-      
-      
-
-
-      
-    
+      /* font-family: "Nunito", sans-serif; */
+      font-family: "Open Sans", sans-serif;
+      /* font-family: "Montserrat", sans-serif; */
+      /* font-family: "Merriweather", serif; */
     }
   }
 }
@@ -133,7 +137,7 @@
     opacity: 1;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .heading {
     
     font-size: 1.2em !important;
@@ -141,7 +145,7 @@
     
   }
   .content span {
-    font-size: .8em !important;
+    font-size: .9em !important;
 
   }
 }
@@ -149,9 +153,12 @@
   .container {
     > div {
       &:hover .content span {
-        font-size: .9em;
-        width: 45vw;
+        font-size: .8em !important;
+        width: 42vw;
         line-height: 2em;
+      }
+      .heading {
+        font-size: 1.2em !important;
       }
     }
   }
@@ -159,7 +166,7 @@
     flex: 0 0 10vw; /* Style for unhovered divs when any card in .container is hovered */
   }
   .container > div:hover {
-    flex: 0 0 50vw; /* Style for the hovered card */
+    flex: 0 0 45vw; /* Style for the hovered card */
   }
   .container > div {
     flex: 0 0 20vw; /* Default style for all divs */

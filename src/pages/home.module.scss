@@ -7,6 +7,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  
 
   > h1,
   p {
@@ -131,7 +132,7 @@
   /* CSS rules for desktop devices go here */
   .page {
     justify-content: center;
-    
+    padding-top: 5vh;
     
     .imgContainer img {
       width: 300px;

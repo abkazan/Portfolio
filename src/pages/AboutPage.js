@@ -18,8 +18,8 @@ const software = ['VSCode', 'Github', 'Linux Terminal','Figma', 'Firebase', 'Goo
 const cardContent = [
     {text: "My favorite episode of my favorite show growing up was the SP-129 episode of Spongebob where Squidward time-travels to the future and everything is chrome and high-tech. My five year old brain thought this the coolest thing!", value: require('../images/gifs/future-spongebob.gif')},
     {text: "At the same time, I began learning how to play video games where I quickly fell in love with Super Smash Bros, Mario Kart, and The Legend of Zelda.", value: require('../images/gifs/wombo-combo.gif')},
-    {text: "I discovered my passion for working with technology when I took an class on electronic music production in high school. I quickly mastered the interface of garageband and fell in love with experimenting with differnet melodies, rhythms, effects, and instruments.", value: require('../images/gifs/zaytoven.gif')},
-    {text: "In college, I learned various programming languages, frameworks, and practices in the process of earning my computer science degree, and I can't wait to put these skills to use!", value: require('../images/gifs/monkey-coding.gif')}
+    {text: "I discovered my passion for working with technology when I took an electronic music production class in high school. I quickly mastered the interface of Garageband and loved experimenting with differnet melodies, rhythms, effects, and instruments.", value: require('../images/gifs/zaytoven.gif')},
+    {text: "In college, I learned various programming languages, frameworks, and practices in the process of earning my computer science degree. I can't wait to put these skills to use!", value: require('../images/gifs/monkey-coding.gif')}
   ];
 
 const AboutPage = () => {

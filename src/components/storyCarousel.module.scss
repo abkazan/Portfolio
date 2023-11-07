@@ -21,13 +21,13 @@
   flex-direction: column;
   justify-content: space-around;
   > p {
-    color: black;
-    /* max-width: 100%; */
+    font-family: "Alegreya", serif;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: bold;
     color: white;
     margin-bottom: 10px;
+    /* letter-spacing: .05em; */
   }
   > img {
     /* max-width: 100%; */

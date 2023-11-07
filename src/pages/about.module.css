@@ -18,6 +18,7 @@
    text-align: center;
    color: white;
    /* text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274; */
+   font-style: italic;
 }
 @media (min-width: 501px) and (max-width: 730px) {
    .pageHeading {

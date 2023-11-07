@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './hero.module.css';
+import styles from './hero.module.scss';
 import AnimePic from '../images/animecity.webp';
 import ShootingStar from "./ShootingStar";
 
