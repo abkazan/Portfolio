@@ -24,7 +24,7 @@ const HomePage = () => {
             setImgUrl(image.src); // Once the image is loaded, set the URL
             setTimeout(() => {
                 setImageLoaded(true);
-            }, 2000);
+            }, 3000);
             // Mark the image as loaded
         };
     }, []);

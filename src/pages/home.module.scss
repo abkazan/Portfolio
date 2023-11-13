@@ -50,6 +50,7 @@
         box-shadow: 3px 3px 15px #7645d8;
         height: auto;
         border-radius: 20px;
+        
       }
     }
     .txtContainer {
@@ -89,6 +90,7 @@
     }
   }
 }
+
 @media (max-width: 700px) {
   /* CSS rules for mobile devices go here */
   .page {
@@ -100,7 +102,9 @@
     }
     .imgContainer {
       > img {
-        width: 175px;
+        width: 175px !important;
+        
+        
       }
     }
     .txtContainer {
@@ -134,12 +138,14 @@
     font-size: 1.5em;
   }
 }
-@media (min-width: 701px) and (max-width: 1023px) {
+@media (min-width: 700.1px) and (max-width: 1023px) {
   /* CSS rules for tablet devices go here */
 
   .imgContainer {
     > img {
-      width: 250px;
+      width: 250px !important;
+
+      
     }
   }
   .txtContainer p {
