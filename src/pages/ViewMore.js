@@ -5,6 +5,7 @@ import projectData from '../components/new_project_data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
+
 const ViewMore = () => {
 
     const [loading, setLoading] = useState(true);
@@ -79,7 +80,9 @@ const ViewMore = () => {
                                 ))}
                             </div>
                         </div>
-
+                        <div className={styles.bottom}>
+                            {`${project.prompt}`} <a href={project.projectLink} target="_blank" rel="noopener noreferrer">here</a>
+                        </div>
 
 
                     </>

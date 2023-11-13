@@ -19,7 +19,9 @@
       "OOP",
       "Database managment",
       "APIs"
-    ]
+    ], 
+    "prompt": "The code is not public for security reasons, but you can view this site",
+    "projectLink": "https://bucksin6ixffsn.netlify.app/"
   },
   {
     "title": "Digital Sampler",
@@ -40,7 +42,9 @@
       "User interface creation",
       "Version control",
       "Agile/Scrum Practices"
-    ]
+    ],
+    "prompt": "View code", 
+    "projectLink": "https://github.com/abkazan/My-Code/tree/main/Digital-Sampler"
   },
   {
     "title": "Wisconsin Loan Data Analysis",
@@ -56,7 +60,9 @@
       "Binary Search Trees",
       "Recursion",
       "Data analysis"
-    ]
+    ], 
+    "prompt": "View code", 
+    "projectLink": "https://github.com/abkazan/My-Code/tree/main/Wisconsin-Loan-Data-Analysis"
   },
   {
     "title": "Image Classifier",
@@ -72,6 +78,8 @@
       "Machine Learning",
       "Neural Networks",
       "Training, testing, and evaluating a prediction model"
-    ]
+    ], 
+    "prompt": "View code", 
+    "projectLink": "https://github.com/abkazan/My-Code/tree/main/Image-Classifier"
   }
 ]
