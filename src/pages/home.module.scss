@@ -1,12 +1,12 @@
 /* * {
   border: 1px solid red;
 } */
-
 .page.loading {
   height: 100vh !important;
-  overflow: hidden;
 }
 .page {
+  box-sizing: border-box;
+  
   background-color: #000114;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,9 @@
   padding-top: 5vh;
   height: 110vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  
   /* padding: 5vh 0; */
   
   > h1,
@@ -38,8 +40,6 @@
 
     .imgContainer,
     .txtContainer {
-      /* border: 1px solid red; */
-      /*  margin: 10px; */
       flex: 1;
       max-width: 60vw;
     }
@@ -140,14 +140,12 @@
 }
 @media (min-width: 700.1px) and (max-width: 1023px) {
   /* CSS rules for tablet devices go here */
-
   .imgContainer {
     > img {
       width: 250px !important;
-
-      
     }
   }
+
   .txtContainer p {
     font-size: 1.5em;
   }
