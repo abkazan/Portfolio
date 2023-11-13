@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import React from "react";
 import styles from './home.module.scss';
-
+import { Link } from 'react-router-dom';
 
 //import ShootingStar from "./ShootingStar";
 
@@ -52,6 +52,9 @@ const HomePage = () => {
                             </div>
                         </div>
 
+                    </div>
+                    <div className = {styles.bottom}>
+                        View My <Link to='/portfolio' className={styles.portfolioLink}>Portfolio</Link> or click the navbar in the top right corner to look around!
                     </div>
                 </>
             ) : (

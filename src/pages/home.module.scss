@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
-  height: 100vh;
+  height: 115vh;
   overflow: hidden;
+  
   
 
   > h1,
@@ -136,7 +137,7 @@
     padding-top: 5vh;
     
     .imgContainer img {
-      width: 300px;
+      width: 270px;
     }
     .txtContainer p {
       font-size: 1.75em;
@@ -156,5 +157,20 @@
     text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec,
       -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
     color: white;
+  }
+}
+.bottom {
+  color: white; 
+  text-align: center;
+  font-size: 1.2em;
+  max-width: 80%;
+  .portfolioLink {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    &:hover {
+      color: #02f840;
+      text-decoration: underline;
+    }
   }
 }
