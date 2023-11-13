@@ -31,7 +31,7 @@ const HomePage = () => {
 
     return (
 
-        <div className={styles.page}>
+        <div className={`${styles.page} ${imageLoaded ? '' : styles.loading}`}>
             {imageLoaded ? (
                 <>
                     <h1 className={styles.heading}>Hello, My name is Andrew Kazan!</h1>
