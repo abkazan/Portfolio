@@ -75,8 +75,7 @@
     "concepts learned": [
       "Artificial Intelligence",
       "Machine Learning",
-      "Neural Networks",
-      "Training, testing, and evaluating a prediction model"
+      "Neural Networks"
     ], 
     "prompt": "View code", 
     "projectLink": "https://github.com/abkazan/My-Code/tree/main/Image-Classifier"
