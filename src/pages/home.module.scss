@@ -11,9 +11,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 100vw;
   height: 110vh;
+  padding: 5vh 0;
   
   > h1,
   p {
