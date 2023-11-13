@@ -35,13 +35,12 @@
       "Pedalboard"
     ],
     "concepts learned": [
-      "OOP",
+      "Version control/Collaboration",
+      "Agile/Scrum Practices",
+      "Object Oriented Programming",
       "Fullstack desktop development",
       "Code Architecture",
-      "Reproducability",
-      "User interface creation",
-      "Version control",
-      "Agile/Scrum Practices"
+      "User interface creation"      
     ],
     "prompt": "View code", 
     "projectLink": "https://github.com/abkazan/My-Code/tree/main/Digital-Sampler"
