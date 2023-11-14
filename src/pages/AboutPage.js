@@ -12,7 +12,7 @@ const concepts = ['Web development', 'Object-oriented programming', 'Data Struct
                     'Code Architecure',
                     'Cyber Security',
                     'Agile/scrum practices',
-                    'Data analysis/maintenence']
+                    'Data analysis/maintenence', 'Unit Tests']
 const software = ['VSCode', 'Github', 'Linux Terminal','Figma', 'Firebase', 'Google Cloud','Google Slides', 'Microsoft Word','Microsoft Excel']
 
 const cardContent = [
