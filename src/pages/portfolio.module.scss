@@ -8,8 +8,8 @@
     justify-content: space-between;
     
 }
-.heading, .subheading {
-    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+.subheading {
+   
     a {
         font-style: italic;
         color: inherit;
@@ -21,11 +21,12 @@
 }
 
 .heading {
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
     color: white;
     padding-top: 5vh;
     font-size: 2.5em;
     letter-spacing: 5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
 }
 @media (max-width: 600px) {

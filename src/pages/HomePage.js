@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import React from "react";
+
 import styles from './home.module.scss';
-import { Link } from 'react-router-dom';
+
+
 
 //import ShootingStar from "./ShootingStar";
 
@@ -53,9 +54,9 @@ const HomePage = () => {
                         </div>
 
                     </div>
-                    <div className = {styles.bottom}>
+                    {/* <div className = {styles.bottom}>
                         View My <Link to='/portfolio' className={styles.portfolioLink}>Portfolio</Link> or click the navbar in the top left corner to look around!
-                    </div>
+                    </div> */}
                 </>
             ) : (
                 <div className={styles.loader}>

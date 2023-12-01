@@ -4,9 +4,14 @@
   align-items: center;
   text-align: center;
   margin-bottom: 5vh;
-  /* border: 1px solid red; */
   width: 100%;
-  
+  h1 {
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec,
+      -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+  }
 }
 
 .card {

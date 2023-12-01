@@ -8,8 +8,12 @@
    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
    color: #fff;
    margin-top: 5vh;
-   font-size: 3.5rem;
-   letter-spacing: .2em;
+   
+   /* letter-spacing: .2em; */
+   
+   
+    font-size: 2.5em;
+    
 }
 .pageHeading {
    font-size: 1.5rem;
@@ -84,12 +88,10 @@
     margin-bottom: 3vh;
 }
 
-.story {
-   background-color: #000114;
-   margin-bottom: 100vh;
-}
-.storyHeading {
-   text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec, -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
+.sectionHeading {
    color: white;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 6px #6b0274, -3px -3px 7px #04d5ec,
+      -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
 }
-
