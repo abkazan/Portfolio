@@ -4,6 +4,7 @@ import styles from './viewmore.module.scss';
 import projectData from '../components/new_project_data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import VideoPlayer from "../components/VideoPlayer";
 
 
 const ViewMore = () => {
@@ -49,7 +50,7 @@ const ViewMore = () => {
                     </>
                 ) : (
                     <>
-                    
+
                         <h1>{project.title}</h1>
 
                         <div className={styles.container}>
@@ -57,9 +58,31 @@ const ViewMore = () => {
                             <div className={styles.descAndImg}>
                                 <p>{project.desc}</p>
                                 <img src={project.img} alt="project img" />
+
                             </div>
 
+                            {project.hasOwnProperty('more info') &&
+                                (
+
+                                    <div className={styles.moreInfo}>
+                                        <p>{project['more info']}</p>
+                                    </div>
+                                )
+                            }
+                            
+
+                        </div>
+                        {project.hasOwnProperty('videoDemo') && (
+                            
+                                <VideoPlayer />
+                           
+                            
+                        )}
+                        <div className={styles.bottom}>
                             <div className={styles.techAndConcepts}>
+
+
+
                                 {Object.keys(project).map((key) => (
                                     typeof project[key] === 'object' && (
                                         <>
@@ -78,9 +101,8 @@ const ViewMore = () => {
                                         </>
                                     )
                                 ))}
+
                             </div>
-                        </div>
-                        <div className={styles.bottom}>
                             {`${project.prompt}`} <a href={project.projectLink} target="_blank" rel="noopener noreferrer">here</a>
                         </div>
 

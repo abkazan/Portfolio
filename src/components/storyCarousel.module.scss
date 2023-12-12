@@ -13,6 +13,7 @@
       -3px 3px 8px #02f840, 3px -3px 9px #6b0274;
   }
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 .card {
   padding: 20px;
@@ -29,10 +30,10 @@
   flex-direction: column;
   justify-content: space-around;
   > p {
-    font-family: "Alegreya", serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1em;
+    
     color: white;
     margin-bottom: 10px;
     /* letter-spacing: .05em; */

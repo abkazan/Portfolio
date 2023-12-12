@@ -3,6 +3,7 @@
     "title": "Bucksin6ixffsn",
     "desc": "A website for the Bucksin6ixffsn podcast, written in React with backend admin authentication using an Express server",
     "img": "https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg",
+    "more info": "For users this is a simple website to display info about the podcast and allow users to submit comments under each podcast, as well as general comments about the podcast as a whole. However, it also conatins a hidden admin sign-in, allowing the podcast creators to update the site with new podcasts, images for each podcast, and profile pictures.",
     "tech used": [
       "ReactJs",
       "ExpressJs",
@@ -26,6 +27,7 @@
   {
     "title": "Digital Sampler",
     "desc": "A music production application that allows users to play around with audio effects",
+    "more info": "This software provides a variety of music samples, and gives users the options to apply reverb, distortion, delay, and chorus to said audio effects. The user can also bind each sample to a key on the keyboard and activate the sample by pressing the key. In short, this allows users to essentially play music using just their keyboard! There is also a feature to upload your own samples and add them to a public database. Below is a short demonstration of some of the functionality.",
     "img": "https://media.sweetwater.com/m/products/image/a33a7cfc57Xam2hHAmFW0R3kpzAnF3YG3iMX9jpi.jpg?quality=82&width=750&ha=a33a7cfc57eef7be",
     "tech used": [
       "Python",
@@ -42,6 +44,7 @@
       "Code Architecture",
       "User interface creation"      
     ],
+    "videoDemo": "yes",
     "prompt": "View code", 
     "projectLink": "https://github.com/abkazan/My-Code/tree/main/Digital-Sampler"
   },

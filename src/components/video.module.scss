@@ -1,0 +1,13 @@
+
+.videoPlayer{
+    border: 1px solid red;
+    max-width: 640px; /* Adjust to your desired maximum width */
+    margin: 0 auto;   /* Center the video player */
+  }
+  
+  /* Use media queries to adjust styles for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .videoPlayer {
+      max-width: 100vw; /* Full width for smaller screens */
+    }
+  }
