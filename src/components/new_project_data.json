@@ -49,23 +49,27 @@
     "projectLink": "https://github.com/abkazan/My-Code/tree/main/Digital-Sampler"
   },
   {
-    "title": "Wisconsin Loan Data Analysis",
-    "desc": "An optimized Python module for analyzing Wisconsin loan data",
-    "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_vs_Data_Analytics.jpg",
+    "title": "ChatTrip",
+    "desc": "An AI-powered travel agent that has full chatting capabilities",
+    "more info": "This AI-powered chatbot utilizes an ExpressJS server endpoint to make calls to the OpenAI API. Paired with a clean interface written in NextJS and TailwindCSS, this application gives an amazing user-experience that could revolutionize the travel industry.",
+    "img": "https://travelprnews.com/wp-content/uploads/2021/11/https___specials-images.forbesimg.com_imageserve_920377840_0x0.jpg",
     "tech used": [
-      "Python",
-      "Pandas",
-      "JupyterLabs"
+      "NextJS",
+      "TailwindCSS",
+      "NodeJS",
+      "ExpressJS",
+      "OpenAI API",
+      "Vercel"
     ],
     "concepts learned": [
-      "Python modules/classes (OOP)",
-      "Binary Search Trees",
-      "BFS/DFS",
-      "Recursion",
-      "Data analysis"
+      "Responsive Interface design",
+      "OpenAI API usage",
+      "Server-side rendering",
+      "CI/CD",
+      "Fullstack web development"
     ], 
-    "prompt": "View code", 
-    "projectLink": "https://github.com/abkazan/My-Code/tree/main/Wisconsin-Loan-Data-Analysis"
+    "prompt": "View demo", 
+    "projectLink": "https://chatttrip.vercel.app/"
   },
   {
     "title": "Image Classifier",

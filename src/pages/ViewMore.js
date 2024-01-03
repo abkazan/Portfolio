@@ -16,7 +16,9 @@ const ViewMore = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const projectToView = urlParams.get('project');
         const index = projectData.findIndex(obj => obj.title === projectToView);
+        
         setProject(projectData[index]);
+
         setTimeout(() => {
             setLoading(false);
         }, 1000)
@@ -40,14 +42,14 @@ const ViewMore = () => {
 
             <div className={styles.page}>
                 {loading ? (
-                    <>
+                
 
                         <div className={styles.loading}>
                             <h1>Loading...</h1>
                             <Loader />
                         </div>
 
-                    </>
+                    
                 ) : (
                     <>
 
@@ -64,7 +66,7 @@ const ViewMore = () => {
                             {project.hasOwnProperty('more info') &&
                                 (
 
-                                    <div className={styles.moreInfo}>
+                                    <div className={`${styles.moreInfo} ${project.title === 'ChatTrip' ? styles.chattrip : ''}`}>
                                         <p>{project['more info']}</p>
                                     </div>
                                 )
