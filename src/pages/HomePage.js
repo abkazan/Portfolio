@@ -52,11 +52,12 @@ const HomePage = () => {
                                 </a>
                             </div>
                         </div>
-
+                        
                     </div>
-                    {/* <div className = {styles.bottom}>
-                        View My <Link to='/portfolio' className={styles.portfolioLink}>Portfolio</Link> or click the navbar in the top left corner to look around!
-                    </div> */}
+                    <div className={styles.bottom}>
+                            Keep scrolling or click on the menu in the corner to view my portfolio and learn about me!
+                    </div>
+                    
                 </>
             ) : (
                 <div className={styles.loader}>

@@ -1,5 +1,28 @@
 [
   {
+    "title": "ChatTrip",
+    "desc": "An AI-powered travel agent that has full chatting capabilities",
+    "more info": "This AI-powered chatbot utilizes an ExpressJS server endpoint to make calls to the OpenAI API. Paired with a clean interface written in NextJS and TailwindCSS, this application gives an amazing user-experience that could revolutionize the travel industry.",
+    "img": "https://travelprnews.com/wp-content/uploads/2021/11/https___specials-images.forbesimg.com_imageserve_920377840_0x0.jpg",
+    "tech used": [
+      "NextJS",
+      "TailwindCSS",
+      "NodeJS",
+      "ExpressJS",
+      "OpenAI API",
+      "Vercel"
+    ],
+    "concepts learned": [
+      "Responsive Interface design",
+      "OpenAI API usage",
+      "Server-side rendering",
+      "CI/CD",
+      "Fullstack web development"
+    ], 
+    "prompt": "View demo", 
+    "projectLink": "https://chatttrip.vercel.app/"
+  },
+  {
     "title": "Bucksin6ixffsn",
     "desc": "A website for the Bucksin6ixffsn podcast, written in React with backend admin authentication using an Express server",
     "img": "https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg",
@@ -48,29 +71,7 @@
     "prompt": "View code", 
     "projectLink": "https://github.com/abkazan/My-Code/tree/main/Digital-Sampler"
   },
-  {
-    "title": "ChatTrip",
-    "desc": "An AI-powered travel agent that has full chatting capabilities",
-    "more info": "This AI-powered chatbot utilizes an ExpressJS server endpoint to make calls to the OpenAI API. Paired with a clean interface written in NextJS and TailwindCSS, this application gives an amazing user-experience that could revolutionize the travel industry.",
-    "img": "https://travelprnews.com/wp-content/uploads/2021/11/https___specials-images.forbesimg.com_imageserve_920377840_0x0.jpg",
-    "tech used": [
-      "NextJS",
-      "TailwindCSS",
-      "NodeJS",
-      "ExpressJS",
-      "OpenAI API",
-      "Vercel"
-    ],
-    "concepts learned": [
-      "Responsive Interface design",
-      "OpenAI API usage",
-      "Server-side rendering",
-      "CI/CD",
-      "Fullstack web development"
-    ], 
-    "prompt": "View demo", 
-    "projectLink": "https://chatttrip.vercel.app/"
-  },
+  
   {
     "title": "Image Classifier",
     "desc": "A PyTorch-based neural network to classify a dataset of 60,000 clothing images, achieving an 86% prediction accuracy",

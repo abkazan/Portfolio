@@ -6,9 +6,9 @@ import styles from './about.module.css';
 import SlidingElement from "../components/SlidingElement";
 
 
-const languages = ['Python', 'HTML/CSS', 'Javascript', 'ReactJS', 'ExpressJS', 'NodeJS', 'Pandas', 'Pytorch', 'Flask'];
+const languages = ['Javascript', 'HTML/CSS', 'ReactJS', 'ExpressJS', 'NodeJS', 'TailwindCSS', 'Python', 'Pytorch', 'Flask'];
 const concepts = ['Web development', 'Object-oriented programming', 'Data Structures',
-                    'Testing and Debugging',
+                    'Responsive web design',
                     'Code Architecure',
                     'Cyber Security',
                     'Agile/scrum practices',

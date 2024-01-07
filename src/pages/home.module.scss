@@ -15,8 +15,8 @@
   gap: 5vh;
   width: 100vw;
   padding-top: 5vh;
-  height: 100vh;
-  overflow-y: scroll;
+  height: fit-content;
+  
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   
@@ -35,7 +35,7 @@
   .imgAndTxt {
     /* border: 1px solid red; */
     display: flex;
-    padding: 20px 0;
+    padding: 10px 0;
     align-items: center;
 
     .imgContainer,
