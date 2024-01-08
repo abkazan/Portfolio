@@ -60,7 +60,6 @@ const ViewMore = () => {
                             <div className={styles.descAndImg}>
                                 <p>{project.desc}</p>
                                 <img src={project.img} alt="project img" />
-
                             </div>
 
                             {project.hasOwnProperty('more info') &&
@@ -68,6 +67,7 @@ const ViewMore = () => {
 
                                     <div className={`${styles.moreInfo} ${project.title === 'ChatTrip' ? styles.chattrip : ''}`}>
                                         <p>{project['more info']}</p>
+                                        <p className={styles.linkToProj}>{`${project.prompt}`} <a href={project.projectLink} target="_blank" rel="noopener noreferrer">here</a></p>
                                     </div>
                                 )
                             }
@@ -81,14 +81,14 @@ const ViewMore = () => {
                             
                         )}
                         <div className={styles.bottom}>
+                            
                             <div className={styles.techAndConcepts}>
 
 
 
                                 {Object.keys(project).map((key) => (
                                     typeof project[key] === 'object' && (
-                                        <>
-
+                                        
                                             <div className={styles.list}>
                                                 <h2>{key}</h2>
                                                 <ul>
@@ -100,12 +100,15 @@ const ViewMore = () => {
                                                 </ul>
                                             </div>
 
-                                        </>
+                                        
                                     )
                                 ))}
 
                             </div>
-                            {`${project.prompt}`} <a href={project.projectLink} target="_blank" rel="noopener noreferrer">here</a>
+                            {!(project.hasOwnProperty('more info')) && (
+                                 <p className={styles.altLink}>{`${project.prompt}`} <a href={project.projectLink} target="_blank" rel="noopener noreferrer">here</a></p>
+                            )}
+                            
                         </div>
 
 

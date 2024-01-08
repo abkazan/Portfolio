@@ -6,6 +6,17 @@
     margin: 0 auto;
     background-color: #000114;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      
+      padding-bottom: 5vh;
+      width: 50%;
+      font-size: 1em;
+    }
     
   }
   .page h2 {
@@ -53,10 +64,9 @@
     filter: saturate(100%);
   } */
   .loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
+    display: grid;
+    place-items: center;
     /* border: 1px solid rgb(127, 255, 251); */
     border-radius: 40px;
     display: grid;
@@ -65,17 +75,18 @@
     text-align: center;
     width: 40vw;
     h2 {
-      color: rgb(12, 245, 93);
+      color: rgb(12, 245, 93) !important;
       text-shadow: none !important;
       font-style: italic;
       font-weight: 300;
       margin: 5vh 0;
       font-size: 2em;
+      
 
     }
   }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .inputField,
   .message {
     font-size: 12px !important;
@@ -83,6 +94,9 @@
   }
   .message {
     height: 100px;
+  }
+  .page p {
+    width: 75vw;
   }
   .sendBtn {
     

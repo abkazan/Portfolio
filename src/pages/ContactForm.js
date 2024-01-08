@@ -60,6 +60,7 @@ function ContactForm() {
   return (
     <div className={styles.page}>
       <h2>Contact Me</h2>
+      <p>Let's chat! Send me a message directly to my inbox by completing the form below and I will get back to you ASAP!</p>
       {sending ? (
         <div className={styles.loading}>
           <h2>Sending Message...</h2>

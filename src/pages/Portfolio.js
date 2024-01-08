@@ -6,7 +6,7 @@ const Portfolio = () => {
             <div className={styles.page}>
                 <h1 className={styles.heading}>My Portfolio</h1>
                 <CardCarousel />
-                <h1 className={styles.subheading}>The code for these projects and more can be found on my <a href="https://github.com/abkazan/My-Code" target="_blank" rel="noreferrer">Github</a></h1>
+                <h1 className={styles.subheading}>Curious for more? Explore my <a href="https://github.com/abkazan/My-Code" target="_blank" rel="noreferrer">GitHub</a> for a code journey!</h1>
             </div>
     );
 };
